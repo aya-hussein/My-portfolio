@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/png" href = "imgs/A.png"> 
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Header -->
+    <section class="header">
+        <nav class="navbar sm:navbar-expand bg-1 fg-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="imgs/A.png"></a>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certificates">Certificates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+                </dialog>
+            </div>
+        </nav>
+    </section>
+    <!-- End Header -->
+
+    <!-- Start Hero section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-autoplay="true">
+                <div class="carousel-inner rounded-5">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="imgs/slider1.jpg" class="d-block w-100" alt="pic1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                    <img src="imgs/slider2.jpg" class="d-block w-100" alt="pic2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                    <img src="imgs/slider3.jpg" class="d-block w-100" alt="pic3">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#carouselExampleInterval" aria-label="Pause" data-bs-pause-label="Pause" data-bs-play-label="Play">
+                    <span class="carousel-icon-pause" aria-hidden="true"></span>
+                    <span class="carousel-icon-play" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End Hero section -->
+
+    <!-- Start About section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <div class="row about-row">
+                    <div class="col">
+                        <div class="about-text">
+                            <p>Hello, My name is</p>
+                            <h2>Aya Mohamed</h2>
+                            <h3>Web Developer</h3>
+                            <button class="btn-solid btn-styled theme-secondary" onclick="window.location.href='#footer';">Contact Now <i class="ri-arrow-right-fill"></i></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="education" data-bs-toggle="tab" data-bs-target="#education-pane" type="button" role="tab" aria-controls="education-pane" aria-selected="true">Education</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="specialization" data-bs-toggle="tab" data-bs-target="#specialization-pane" type="button" role="tab" aria-controls="specialization-pane" aria-selected="false">Specialization</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="graduation" data-bs-toggle="tab" data-bs-target="#graduation-pane" type="button" role="tab" aria-controls="graduation-pane" aria-selected="false">Graduation Project</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="experience" data-bs-toggle="tab" data-bs-target="#experience-pane" type="button" role="tab" aria-controls="experience-pane" aria-selected="false">Experience</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="skills" data-bs-toggle="tab" data-bs-target="#skills-pane" type="button" role="tab" aria-controls="skills-pane" aria-selected="false">Skills</button>
+                            </li>
+                            
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane show active" id="education-pane" role="tabpanel" aria-labelledby="education" tabindex="0">
+                                <p>- Faculty of Computer and Information Sciences.</p>
+                                <p>- Ain Shams University.</p>    
+                            </div>
+                            <div class="tab-pane" id="specialization-pane" role="tabpanel" aria-labelledby="specialization" tabindex="0">
+                                <p>- Information Systems Department (IS).</p>
+                                <p>- very good grade.</p>
+                                <p>- year 2016.</p> 
+                            </div>
+                            <div class="tab-pane" id="graduation-pane" role="tabpanel" aria-labelledby="graduation-tab" tabindex="0">
+                                <h5>( Cloud-Based Software Testing Service )</h5>
+                                <p>- Uses remote cloud infrastructure instead of physical, on-premise hardware to run functional, performance, and security tests on applications.</p>
+                            </div>
+                            <div class="tab-pane" id="experience-pane" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">
+                                <p>- Trainee as an UI designer and developer.</p>
+                                <p>- In Arabia net Company.</p>
+                                <p>- From 11/2018 to 2/2019.</p>      
+                            </div>
+                            <div class="tab-pane" id="skills-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
+                                <p>
+                                    1- Building the client-side of websites and web applications - everything that users see, click, and interact with in their web browser
+                                    using HTML, CSS, JavaScript. 
+                                </p>
+                                <p>
+                                    2- Styles sites faster with frameworks like Bootstrap.
+                                </p>
+                                <p>
+                                    3- Accelerates development using component-based tools like React.
+                                </p>
+                                <p>
+                                    4- Responsive & Mobile-First Design: Ensures websites look and function well across all screen sizes and devices using media queries.
+                                </p>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End About section -->
+
+    <!-- Start Skills section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h1>Web Skills</h1>
+            <div class="row skills-row">
+                <div class="col">
+                    <div class="card card-body">
+                        <div class="card-body-main">
+                            <p>HTML5</p>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%">85%</div>
+                            </div>
+                        </div>
+                        <div class="card-body-main">
+                            <p>CSS3</p>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 75%">75%</div>
+                            </div>
+                        </div>
+                        <div class="card-body-main">
+                            <p>Bootstrap5</p>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 60%">60%</div>
+                            </div>
+                        </div>
+                        <div class="card-body-main">
+                            <p>JavaScript</p>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%">50%</div>
+                            </div>
+                        </div>
+                        <div class="card-body-main">
+                            <p>ECMAScript6</p>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%">50%</div>
+                            </div>
+                        </div>
+                        <div class="card-body-main">
+                            <p>jQuery</p>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 60%">60%</div>
+                            </div>
+                        </div>
+                        <div class="card-body-main">
+                            <p>ReactJS</p>
+                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 60%">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skills-img">
+                        <img src="imgs/pic.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End Skills section -->
+
+    <!-- Start Portfolio section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <div class="row">
+                <p>Using HTML , CSS , Bootstrap , JavaScript to make a responsive website with one page only.</p>
+                <div class="portfolio-row">
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project0.jpg" class="card-img-top" alt="project0">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/Real-Mark/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project1.jpg" class="card-img-top" alt="project1">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/Bedaya-Company/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project2.jpg" class="card-img-top" alt="project2">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/Beyond/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project3.jpg" class="card-img-top" alt="project3">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/Colorlib/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project4.jpg" class="card-img-top" alt="project4">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/e-commerce-frontend/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project8.png" class="card-img-top" alt="project8">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/MyWebsite/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project9.jpg" class="card-img-top" alt="project9">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/MyCourses/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project10.png" class="card-img-top" alt="project10">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/TechNova/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>Using HTML , CSS , Bootstrap , JavaScript to make a responsive website with internal pages , with English and Arabic Languages.</p>
+                <div class="portfolio-row">
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project5.jpg" class="card-img-top" alt="project5">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/Mas-Al-Shamal/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project6.jpg" class="card-img-top" alt="project6">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/Sanid/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card" style="max-width: 200px">
+                            <img src="imgs/project7.jpg" class="card-img-top" alt="project7">
+                            <div class="card-body">
+                                <a class="btn-outline theme-secondary" href="https://aya-hussein.github.io/Tamemy/" target="_blank">Visit The Website<i class="ri-arrow-right-fill"></i></a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End Portfolio section -->
+
+    <!-- Start Certificates section -->
+    <section class="certificates" id="certificates">
+        <div id="carouselPeek" class="carousel slide" data-bs-autoplay="true" style="--bs-carousel-items-peek: 3rem; --bs-carousel-items-gap: 1rem;">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="mb-0">Certificates</h1>
+                <div>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselPeek" data-bs-slide="prev" style="--bs-carousel-control-icon-width: 1rem;">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselPeek" data-bs-slide="next" style="--bs-carousel-control-icon-width: 1rem;">
+                    <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000"><img src="imgs/certificate0.jpg" class="d-block w-100 rounded-5" alt="certificate0"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate1.PNG" class="d-block w-100 rounded-5" alt="certificate1"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate2.png" class="d-block w-100 rounded-5" alt="certificate2"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate3.png" class="d-block w-100 rounded-5" alt="certificate3"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate4.PNG" class="d-block w-100 rounded-5" alt="certificate4"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate5.PNG" class="d-block w-100 rounded-5" alt="certificate5"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate6.PNG" class="d-block w-100 rounded-5" alt="certificate6"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate7.png" class="d-block w-100 rounded-5" alt="certificate7"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate8.png" class="d-block w-100 rounded-5" alt="certificate8"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate9.jpg" class="d-block w-100 rounded-5" alt="certificate9"></div>
+                <div class="carousel-item" data-bs-interval="3000"><img src="imgs/certificate10.png" class="d-block w-100 rounded-5" alt="certificate10"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Certificates section -->
+
+    <!-- Start Footer -->
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col">
+                    <div class="footer-1">
+                        <h4>Behance account :</h4>
+                        <p><a target="_blank" href="https://www.behance.net/ayamohamed2ec2" class="theme-inverse underline-offset-2 underline-20 hover:underline-100">https://www.behance.net/ayamohamed2ec2</a></p>
+                        <br>
+                        <h4>LinkedIn account :</h4>
+                        <p><a target="_blank" href="https://www.linkedin.com/in/aya-mohamed-hussein" class="theme-inverse underline-offset-2 underline-20 hover:underline-100">https://www.linkedin.com/in/aya-mohamed-hussein</a></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-2">
+                        <h4>Contact Me</h4>
+                        <div class="c-link">
+                            <i class="ri-mail-line"></i>
+                            <span>aya.mohamed.126@gmail.com</span>
+                        </div>
+                        <div class="c-link">
+                            <i class="ri-phone-fill"></i>
+                            <span>01000283695</span>
+                        </div>
+                        <div class="c-link">
+                            <i class="ri-map-pin-fill"></i>
+                            <span>El-Salam City / Cairo, Egypt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- End Footer -->
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
